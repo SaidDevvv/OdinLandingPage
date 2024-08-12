@@ -1,0 +1,248 @@
+
+:root{
+    --primary-color: #3882f6;
+    --secondary-color: #1f2937;
+    --text-light: #ffffff;
+    --text-dark: #1f2937;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--text-light); 
+}
+
+.header-container {
+    background-color: var(--secondary-color);
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-links ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-links a {
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
+.header-links a:hover {
+    text-decoration: none; /* Ensure the underline is not shown on hover */
+    color: #e5e7eb; /* Optional: Change color on hover if desired */
+}
+
+
+.placeholder {
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.left-content {
+    margin-left: 100px;
+    max-width: 400px;
+}
+
+.left-content p {
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 1.5;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.left-content p {
+    font-size: 18px;
+    color: #f9faf8;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+
+/* SEcond section */
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2b6bc6;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1a4d9c;
+    transform: translateY(0);
+}
+
+.random-info-container {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.random-info-heading {
+    font-size: 36px;
+    font-weight: bolder;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.random-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+   
+    
+}
+
+.random-info .block {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--primary-color);
+    background-color: #f9faf8;
+}
+
+
+.subtext {
+    max-width: 150px; /* Limit the width of the paragraph */
+    font-size: 18px;  /* Reduce font size for smaller text */
+    line-height: 1.4; /* Reduce line height to make the text more compact */
+    word-wrap: break-word; /* Ensure text wraps within the container */
+    color: #6b7280; /* Optional: Adjust text color for better readability */
+}
+
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 20px; /* Optional: Add padding to the quote container */
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start (left side) */
+    margin-bottom: 30px;
+    max-width: 1000px;
+    font-size: 36px;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.quote h5 {
+    margin-top: 10px; /* Add some space between the quote and the author */
+    font-size: 36px;  /* Adjust the font size for the author name */
+    font-style: normal; /* Remove the italic style from the author name */
+    color: #6b7280; /* Optional: Change the color to differentiate from the quote text */
+    align-self: flex-end; /* Align the author name to the right side */
+}
+
+
+/* 4 th section */
+
+.call {
+    background-color: transparent; /* Set to transparent to remove grey background */
+    padding: 50px 0; /* Add padding to the section to create space around the box */
+    margin-bottom: 0; /* Remove any potential bottom margin */
+}
+
+.call-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Ensure the call content has a white background */
+    padding: 20px;
+}
+
+.call-box {
+    background-color: var(--primary-color);
+    width: 1000px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Space between the text and the button */
+    justify-content: space-around; /* Use this instead of gap */
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+}
+
+.call-box .text-container {
+    color: var(--text-light);
+}
+
+.call-box h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.call-box p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.call-box button {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-left: 40px; /* Add margin to separate the button from the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.call-box button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.call-box button:active {
+    background-color: #d0d0d0;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 0; /* Ensure no margin at the top */
+}
